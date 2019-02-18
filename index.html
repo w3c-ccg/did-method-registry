@@ -123,6 +123,41 @@ and their associated specifications.
 </section>
 
 <section>
+<h1>The Registration Process</h1>
+<p>
+Software implementers may find that the existing Decentralized
+Identifier Methods listed in this repository are not suitable for their
+use case and may need to add a new method to this registry.
+Adding a Decentralized Identifier Method to this list is designed to be a
+lightweight, community-driven process. In order to add a new method to this
+registry, an implementer MUST:
+</p>
+
+<ol>
+  <li>
+    Implement at least an experimental version of the new DID Method.
+  </li>
+  <li>Create a specification describing the new DID Method that is publicly 
+    available and intended to be conformant with the DID specification at 
+    <a href="https://w3c-ccg.github.io/did-spec/">https://w3c-ccg.github.io/did-spec/</a>.</li>
+  <li>
+    Request that the specification be added to this registry by submitting a
+    Github Pull Request that adds the new method to the list of existing 
+    methods, with URL.
+  </li>
+</ol>
+<p>
+  Specifications that do not meet these criteria will not be accepted. Old listings which fall out of conformance may be removed.
+</p>
+<p>
+Implementers that would like help or guidance during this process are urged
+to join the <a href="https://github.com/w3c-ccg/w3c-ccg.github.io/blob/master/joining.md">W3C Credentials Community Group</a>
+and request assistance via the
+<a href="https://lists.w3.org/Archives/Public/public-credentials/">mailing list</a>.
+</p>
+</section>
+
+<section>
 <h1>The Registry</h1>
 
 <p>
@@ -134,6 +169,7 @@ The links will be updated as subsequent Implementer’s Drafts are produced.
   <thead>
     <tr>
       <th>Method Name</th>
+      <th>Status</th>
       <th>DLT or Network</th>
       <th>Authors</th>
       <th>Link</th>
@@ -146,18 +182,44 @@ The links will be updated as subsequent Implementer’s Drafts are produced.
           did:btcr:
       </td>
       <td>
+          PROVISIONAL
+      </td>
+      <td>
           Bitcoin
       </td>
       <td>
           Christopher Allen, Ryan Grant, Kim Hamilton Duffy
       </td>
       <td>
+        <a href="https://w3c-ccg.github.io/didm-btcr">BTCR DID Method</a>
       </td>
     </tr>
 
     <tr>
       <td>
+          did:stack:
+      </td>
+      <td>
+          PROVISIONAL
+      </td>
+      <td>
+          Bitcoin
+      </td>
+      <td>
+          Jude Nelson
+      </td>
+      <td>
+        <a href="https://github.com/blockstack/blockstack-core/blob/master/docs/blockstack-did-spec.md">Blockstack DID Method</a>
+      </td>
+    </tr>
+
+    
+    <tr>
+      <td>
           did:cnsnt:
+      </td>
+      <td>
+          PROVISIONAL
       </td>
       <td>
           Ethereum
@@ -172,6 +234,9 @@ The links will be updated as subsequent Implementer’s Drafts are produced.
     <tr>
       <td>
           did:erc725:
+      </td>
+      <td>
+          PROVISIONAL
       </td>
       <td>
           Ethereum
@@ -189,6 +254,9 @@ The links will be updated as subsequent Implementer’s Drafts are produced.
           did:example:
       </td>
       <td>
+          PROVISIONAL
+      </td>
+      <td>
           DID Specification
       </td>
       <td>
@@ -204,6 +272,9 @@ The links will be updated as subsequent Implementer’s Drafts are produced.
           did:ipid:
       </td>
       <td>
+          PROVISIONAL
+      </td>
+      <td>
           IPFS
       </td>
       <td>
@@ -215,8 +286,29 @@ The links will be updated as subsequent Implementer’s Drafts are produced.
     </tr>
 
     <tr>
+        <td>
+            did:life:
+        </td>
+        <td>
+            PROVISIONAL
+        </td>
+        <td>
+            RChain
+        </td>
+        <td>
+            lifeID Foundation
+        </td>
+        <td>
+          <a href="https://lifeid.github.io/did-method-spec/">lifeID DID Method</a>
+        </td>
+      </tr>
+
+    <tr>
       <td>
           did:sov:
+      </td>
+      <td>
+          PROVISIONAL
       </td>
       <td>
           Sovrin
@@ -225,13 +317,16 @@ The links will be updated as subsequent Implementer’s Drafts are produced.
           Mike Lodder
       </td>
       <td>
-        <a href="https://github.com/sovrin-foundation/sovrin/blob/master/spec/did-method-spec-template.html">Sovrin DID Method</a>
+        <a href="https://sovrin-foundation.github.io/sovrin/spec/did-method-spec-template.html">Sovrin DID Method</a>
       </td>
     </tr>
 
     <tr>
       <td>
           did:uport:
+      </td>
+      <td>
+          PROVISIONAL
       </td>
       <td>
           Ethereum
@@ -246,6 +341,9 @@ The links will be updated as subsequent Implementer’s Drafts are produced.
     <tr>
       <td>
           did:v1:
+      </td>
+      <td>
+          PROVISIONAL
       </td>
       <td>
           Veres One
@@ -263,6 +361,9 @@ The links will be updated as subsequent Implementer’s Drafts are produced.
           did:dom:
       </td>
       <td>
+          PROVISIONAL
+      </td>
+      <td>
           Ethereum
       </td>
       <td>
@@ -272,6 +373,183 @@ The links will be updated as subsequent Implementer’s Drafts are produced.
       </td>
     </tr>
 
+    <tr>
+      <td>
+          did:ont:
+      </td>
+      <td>
+          PROVISIONAL
+      </td>
+      <td>
+          Ontology
+      </td>
+      <td>
+          Ontology Foundation
+      </td>
+      <td>
+        <a href="https://github.com/ontio/ontology-DID/blob/master/docs/en/DID-ONT-method.md">Ontology DID Method</a>
+      </td>
+    </tr>
+
+        <tr>
+      <td>
+          did:vvo:
+      </td>
+      <td>
+          PROVISIONAL
+      </td>
+      <td>
+          Vivvo
+      </td>
+      <td>
+          Vivvo Application Studios
+      </td>
+      <td>
+        <a href="https://vivvo.github.io/vivvo-did-scheme/spec/did-method-spec-template.html">Vivvo DID Method</a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+          did:icon:
+      </td>
+      <td>
+          PROVISIONAL
+      </td>
+      <td>
+          ICON
+      </td>
+      <td>
+          ICON Foundation
+      </td>
+      <td>
+        <a href="https://github.com/icon-project/icon-DID/blob/master/docs/ICON-DID-method.md">ICON DID Method</a>
+      </td>
+    </tr>
+	<tr>
+      <td>
+          did:iwt:
+      </td>
+      <td>
+          PROVISIONAL
+      </td>
+      <td>
+          InfoWallet
+      </td>
+      <td>
+          Raonsecure
+      </td>
+      <td>
+        <a href="https://github.com/infowallet/did_method/blob/master/did_method.md">InfoWallet DID Method</a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+          did:ockam:
+      </td>
+      <td>
+          PROVISIONAL
+      </td>
+      <td>
+          Ockam
+      </td>
+      <td>
+          Ockam
+      </td>
+      <td>
+        <a href="https://github.com/ockam-network/did-method-spec/blob/master/README.md">Ockam DID Method</a>
+      </td>
+    </tr>
+
+    <tr>
+        <td>
+            did:ala:
+        </td>
+        <td>
+            PROVISIONAL
+        </td>
+        <td>
+            Alastria
+        </td>
+        <td>
+            Alastria National Blockchain Ecosystem
+        </td>
+        <td>
+          <a href="https://github.com/alastria/alastria-identity/wiki/Alastria-DID-Method-Specification-(Quorum-version)">Alastria DID Method</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            did:op:
+        </td>
+        <td>
+            PROVISIONAL
+        </td>
+        <td>
+            Ocean Protocol
+        </td>
+        <td>
+            Ocean Protocol
+        </td>
+        <td>
+          <a href="https://github.com/oceanprotocol/OEPs/blob/master/7/did-method-spec.md">Ocean Protocol DID Method</a>
+        </td>
+    </tr>    	  
+    
+    <tr>
+        <td>
+            did:jlinc:
+        </td>
+        <td>
+            PROVISIONAL
+        </td>
+        <td>
+            JLINC Protocol
+        </td>
+        <td>
+            Victor Grey
+        </td>
+        <td>
+          <a href="https://did-spec.jlinc.org/">JLINC Protocol DID Method</a>
+        </td>
+    </tr>
+	  
+    <tr>
+        <td>
+            did:ion:
+        </td>
+        <td>
+            PROVISIONAL
+        </td>
+        <td>
+            Bitcoin
+        </td>
+        <td>
+            Various DIF contributors
+        </td>
+        <td>
+          <a href="https://github.com/decentralized-identity/ion-did-method">ION DID Method</a>
+        </td>
+    </tr>
+	  
+    <tr>
+        <td>
+            did:jolo:
+        </td>
+        <td>
+            PROVISIONAL
+        </td>
+        <td>
+            Ethereum
+        </td>
+        <td>
+            Jolocom
+        </td>
+        <td>
+        </td>
+    </tr>
+	  
   </tbody>
 </table>
 
